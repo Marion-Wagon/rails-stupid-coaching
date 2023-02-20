@@ -1,0 +1,18 @@
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 offset-md-3 ">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="pb-5 text-center">My stupid coach</h1>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Me:</strong> <%= params[:question] %></li>
+            <li class="list-group-item"><strong>My stupid coach:</strong> <%= @answer %></li>
+          </ul>
+          <div class="link pt-5 text-center">
+            <%= link_to "Ask another question", ask_path %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
